@@ -9,5 +9,9 @@ if [ "$lastCommit" != "$newCommit" ]; then
   echo "запускаем обновление"
 else
   echo "обновление не требуется"
+  cd hello
+  ./hello.sh
+  cd ..
+  ./hello2.sh
 fi
 
